@@ -1,47 +1,28 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY time "http://www.estrellaproject.org/lkif-core/time.owl#" >
-    <!ENTITY lkif-top "http://www.estrellaproject.org/lkif-core/lkif-top.owl#" >
-    <!ENTITY places "http://www.estrellaproject.org/lkif-core/relative-places.owl#" >
-]>
-
-
 <rdf:RDF xmlns="http://www.estrellaproject.org/lkif-core/lkif-top.owl#"
      xml:base="http://www.estrellaproject.org/lkif-core/lkif-top.owl"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:lkif-top="http://www.estrellaproject.org/lkif-core/lkif-top.owl#"
      xmlns:places="http://www.estrellaproject.org/lkif-core/relative-places.owl#"
-     xmlns:time="http://www.estrellaproject.org/lkif-core/time.owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#">
-    <owl:Ontology rdf:about="">
-        <owl:versionInfo rdf:datatype="&xsd;string"
-            >LKIF Core, version 1.1, copyright (C) 2008, the ESTRELLA consortium</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="&xsd;string"
-            >Partner contributions from the University of Amsterdam (UvA)
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:time="http://www.estrellaproject.org/lkif-core/time.owl#"
+     xmlns:lkif-top="http://www.estrellaproject.org/lkif-core/lkif-top.owl#">
+    <owl:Ontology rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partner contributions from the University of Amsterdam (UvA)
 
 Editor:       Rinke Hoekstra (UvA)
 Authors:      Rinke Hoekstra (UvA)
 Contributors: Joost Breuker (UvA)</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="&xsd;string"
-            >The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
 
 The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work.</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="&xsd;string"
-            >This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LKIF Core, version 1.1, copyright (C) 2008, the ESTRELLA consortium</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -59,77 +40,98 @@ The use of this ontology, and the OWL files through which it is distributed, is 
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Abstract_Entity -->
 
-    <owl:Class rdf:about="#Abstract_Entity">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:comment rdf:datatype="&xsd;string"
-            >An abstract concept is a concept which does not (necessarily) have a referent in either the physical or the mental world.   
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Abstract_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abstract concept is a concept which does not (necessarily) have a referent in either the physical or the mental world.   
 
 Abstract entities are (proto)mathematical, formal entities, entities which have a purely formal, logical or mathematical meaning.
 
 As all concepts are abstractions, one may argue that a separate abstract world is difficult to see. In common-sense, a circle has more properties and is less abstract than in mathematics. Even mathematicians marvel about the fact their pure abstractions enable us to predict very concrete things. However, we are not directly concerned with these mappings. The most important is that common-sense knows about a (small) number of proto-mathematical concepts, such as collections, sequences and count-numbers (positive integers). We know also about geometric simplifications such as line, circle, square, cube, etc. These common sense notions might even be the real roots of our mathematics. However, these kind of semi-formal abstractions do not play a very central role in law, and therefore LRI-Core is thinly populated with abstract classes.</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">抽象概念是一种概念，它（在某种程度上）在物理或心理世界中都不具有指称。
+
+抽象实体是（原始）数学，形式实体，具有纯粹形式，逻辑或数学意义的实体。
+
+由于所有概念都是抽象概念，人们可能会争辩说单独的抽象世界很难被看到。从常识来看，圆圈具有更多的属性，并且不像数学那样抽象。即使数学家也惊叹于他们纯粹的抽象使我们能够预测非常具体的事情。但是，我们并不直接关注这些映射。最重要的是常识知道（小）数量的原始数学概念，例如集合，序列和计数（正整数）。我们也知道几何简化，如直线，圆，正方形，立方体等。这些常识概念甚至可能是我们数学的真正根源。然而，这些半正式的抽象在法律中并不起到非常重要的作用，因此LRI-Core在抽象类中的人口稀少。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">抽象实体</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Entity -->
 
-    <owl:Class rdf:about="#Mental_Entity">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:comment rdf:datatype="&xsd;string"
-            >We made the assumption that our views of the mental world have been developed in analogy with physical processes. Mental objects like thoughts are made of elementary parts: concepts. The contents (substance) of these objects are representations. The conceptual content of thoughts are intended by propositional attitudes, like belief, desire, norm etc. Mental objects are processed or stored in containers like a mind which has parts like various memories. Mental processes like thinking, memorizing, imaging, etc. are operations on mental objects. The energy equivalent of mental processing are emotions: the forces that make us focus our mental energies. 
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We made the assumption that our views of the mental world have been developed in analogy with physical processes. Mental objects like thoughts are made of elementary parts: concepts. The contents (substance) of these objects are representations. The conceptual content of thoughts are intended by propositional attitudes, like belief, desire, norm etc. Mental objects are processed or stored in containers like a mind which has parts like various memories. Mental processes like thinking, memorizing, imaging, etc. are operations on mental objects. The energy equivalent of mental processing are emotions: the forces that make us focus our mental energies. 
 
 There is an important difference between the mental world and the physical. Where physical processes occur causally, mental processes are controlled by an intentional stance. The outcome of mental processes can be the intention to act. The intention to act may consist of a structure of primary actions: a plan. The actions can be aimed at bringing about physical changes, but they may also be aimed at changing the mental state of another agent: these intended actions are communication actions. Like direct actions, communication actions have a physical appearance. They also need some physical medium to transfer the intended mental state. Speech act is the common term for these actions. 
 
 Whether this notion of intended control over mental processes and actions is an illusion or not is besides the point in modeling common-sense. The intentional stance implies a kind of backward, teleological reasoning over causally related processes. A mental object like a  plan consists of a goal state (intention) and is produced by reasoning from goal to means (actions): this is what rational agency behavior is about. 
 
 The mental world is not only a reflective one based in our minds eye. We may observe the stream of conscious mental processes, but the role of the mental conceptualizations is of even more important in understanding and communicating with other people. Mental processes and attitudes (sources of intention) are in the first place the building stones for modeling the minds of other people. The intentional stance means in the first place that we attribute to others and to some extent also to many animals intentions and intention directed mental processing and belief.</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">我们假设我们对心理世界的看法是与物理过程类似的。像思想这样的心理对象是由基本部分构成的：概念。这些对象的内容（实质）是表示。思想的概念内容是通过命题态度来实现的，例如信仰，欲望，规范等。精神对象被处理或存储在容器中，如心灵，其中包含各种记忆的部分。思维，记忆，成像等心理过程是对精神对象的操作。心理处理的能量等同于情绪：使我们专注于精神能量的力量。
+
+心理世界和身体之间存在重要差异。在物理过程因果关系发生的情况下，心理过程受到故意立场的控制。心理过程的结果可能是行动的意图。采取行动的意图可能包括主要行动的结构：计划。这些行动可以旨在实现身体变化，但它们也可能旨在改变另一个代理人的精神状态：这些预期的行动是沟通行动。与直接行动一样，沟通行为具有物理外观。他们还需要一些物理媒介来转移预期的精神状态。言语行为是这些行为的共同术语。
+
+这种对心理过程和行为的预期控制的概念是否是幻觉，除了建模常识之外。故意的立场意味着对因果相关过程的一种落后的目的论推理。像计划一样的心理对象由目标状态（意图）组成，并且通过从目标到手段（动作）的推理产生：这就是理性代理行为的意义所在。
+
+心灵世界不仅是一个基于我们头脑的反思性世界。我们可能会观察到有意识的心理过程，但心理概念化的作用在理解和与他人交流时更为重要。心理过程和态度（意图的来源）首先是建立其他人思维模型的基石。故意的立场首先意味着我们归于他人，并且在某种程度上也意味着许多动物的意图和意图指导心理处理和信仰。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">心里实体</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Object -->
 
-    <owl:Class rdf:about="#Mental_Object">
-        <rdfs:subClassOf rdf:resource="#Mental_Entity"/>
-        <rdfs:comment rdf:datatype="&xsd;string"
-            >Metaphor of physical concepts, i.e. the things we mentally manipulate, either in thought or memory</rdfs:comment>
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Object">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Entity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metaphor of physical concepts, i.e. the things we mentally manipulate, either in thought or memory</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">物理概念的隐喻，即我们在思想或记忆中精神操纵的东西</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">心里对象</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Occurrence -->
 
-    <owl:Class rdf:about="#Occurrence">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:comment rdf:datatype="&xsd;string"
-            >A consequence of our clear separation of ontology from models of situations (occurrences), is well exemplified in the two ways we look at time and space. Things happen against the canvas of space and time. This 3D canvas moving in time (or whatever metaphor) allows us to index instances of objects and processes. Time and space provide positions in time and space for objects. Positions are in general modeled in some mereological framework. However, the objects and processes as classes have time and space properties in a different way. Space occupied by an object is its inherent property of size or extension. This property was for Descartes even the critical one that separated mental (not: abstract) objects from physical ones. Processes occupy (consume) time; they take some duration. This time resource is inversely related to the consumption of energy. This distinction between position and extension is also made in various other ontologies. However, this distinction is easily obscured by the fact that the extension of an object can also be used as a reference for location. An object can be in another object. In fact, any physical object can be used as a spatial and even temporal referent. This does not refute our view that locations are occurrences. To be precise: extension is an inherent, necessary property of a physical object or process; its location is an accidental one.</rdfs:comment>
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Occurrence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consequence of our clear separation of ontology from models of situations (occurrences), is well exemplified in the two ways we look at time and space. Things happen against the canvas of space and time. This 3D canvas moving in time (or whatever metaphor) allows us to index instances of objects and processes. Time and space provide positions in time and space for objects. Positions are in general modeled in some mereological framework. However, the objects and processes as classes have time and space properties in a different way. Space occupied by an object is its inherent property of size or extension. This property was for Descartes even the critical one that separated mental (not: abstract) objects from physical ones. Processes occupy (consume) time; they take some duration. This time resource is inversely related to the consumption of energy. This distinction between position and extension is also made in various other ontologies. However, this distinction is easily obscured by the fact that the extension of an object can also be used as a reference for location. An object can be in another object. In fact, any physical object can be used as a spatial and even temporal referent. This does not refute our view that locations are occurrences. To be precise: extension is an inherent, necessary property of a physical object or process; its location is an accidental one.</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">我们将本体与情境模型（事件）明确分离的结果，在我们看待时间和空间的两种方式中得到了很好的例证。事情发生在空间和时间的画布上。这个3D画布及时移动（或任何隐喻）允许我们索引对象和过程的实例。时间和空间为物体提供时间和空间位置。职位通常以某种社会学框架为蓝本。但是，作为类的对象和进程以不同的方式具有时间和空间属性。对象占据的空间是其大小或扩展的固有属性。这个属性是笛卡尔甚至是将心理（不是：抽象）对象与物理对象分开的关键对象。进程占用（消耗）时间;他们需要一段时间。这个时间资源与能量消耗成反比。位置和扩展之间的区别也在各种其他本体中进行。但是，由于对象的扩展也可以用作位置的参考，因此很容易模糊这种区别。对象可以在另一个对象中。实际上，任何物理对象都可以用作空间甚至是时间参照物。这并不反驳我们认为位置是出现的观点。确切地说：扩展是物理对象或过程的固有必要属性;它的位置是偶然的。</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Physical_Entity -->
 
-    <owl:Class rdf:about="#Physical_Entity">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:comment rdf:datatype="&xsd;string"
-            >The physical world evolves around two main classes: physical objects and processes.
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Physical_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The physical world evolves around two main classes: physical objects and processes.
 
 In lkif-core, the physical world evolves around two main classes: physical objects and processes. Objects are pieces of matter, while matter is typed by substances. Objects have mass, extension, viz. form and aggregation state (which limits form). Objects are the specification of the notion that matter, and in particular solid objects, is what makes the physical world relatively stable and observable. We define (physical) situations in the first place by the arrangement of physical objects (entities).</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">物理世界围绕两个主要类别发展：物理对象和过程。
+
+在lkif-core中，物理世界围绕两个主要类别发展：物理对象和进程。 物体是物质的一部分，而物质是物质的物质。 物体有质量，延伸，即。 形式和聚合状态（限制形式）。 物体是物质概念的规范，特别是固体物体，是使物理世界相对稳定和可观察的原因。 我们首先通过物理对象（实体）的排列来定义（物理）情境。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">物理实体</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Spatio_Temporal_Occurrence -->
 
-    <owl:Class rdf:about="#Spatio_Temporal_Occurrence">
-        <rdfs:subClassOf rdf:resource="#Occurrence"/>
-        <rdfs:comment rdf:datatype="&xsd;string"
-            >An occurrence in space-time</rdfs:comment>
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Spatio_Temporal_Occurrence">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Occurrence"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An occurrence in space-time</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">在时空中出现</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
-    <owl:Class rdf:about="&owl;Thing"/>
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

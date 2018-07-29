@@ -1,38 +1,278 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns="http://www.estrellaproject.org/lkif-core/lkif-extended.owl#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xml:base="http://www.estrellaproject.org/lkif-core/lkif-extended.owl">
-  <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-rules.owl"/>
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time-modification.owl"/>
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl"/>
-	    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-	    >
+<rdf:RDF xmlns="http://www.estrellaproject.org/lkif-core/lkif-extended.owl#"
+     xml:base="http://www.estrellaproject.org/lkif-core/lkif-extended.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.estrellaproject.org/lkif-core/lkif-extended.owl">
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-rules.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time-modification.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
+
+	The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
+
+	</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	LKIF Core, version 1.1, copyright (C) 2008, the ESTRELLA consortium
+	</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	This module is part of LKIF-Core, version 1.1, ESTRELLA, IST-2004-027665
+	</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 	Partner contributions from the University of Amsterdam (UvA), the University of Bologna (UNIBO) and the Fraunhofer institute (FOKUS)
 
 	Editor:       Rinke Hoekstra (UvA)
 	Authors:      Rinke Hoekstra (UvA), Alexander Boer (UvA), Kasper van den Berg (UvA)
 	Contributors: Joost Breuker (UvA), Thomas Gordon (FOKUS), Monica Palmirani (UNIBO), Rosella Rubino (UNIBO)
 	</owl:versionInfo>
-	    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-	    >
-	The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
+    </owl:Ontology>
+    
 
-	The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
 
-	</owl:versionInfo>
-	    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-	    >
-	LKIF Core, version 1.1, copyright (C) 2008, the ESTRELLA consortium
-	</owl:versionInfo>
-	    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-	    >
-	This module is part of LKIF-Core, version 1.1, ESTRELLA, IST-2004-027665
-	</owl:versionInfo>
-  </owl:Ontology>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#addressee">
+        <rdfs:label>受信人</rdfs:label>
+        <rdfs:comment>允许表达交流态度与沟通行为被处理的代理之间的关系</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#asserted_by">
+        <rdfs:comment>将断言的表达式与断言联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#asserts">
+        <rdfs:comment>将断言与所断言的表达式联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#author">
+        <rdfs:comment>将表达式与表达式的作者（例如，文档中包含的表达式）联系起来。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#bears">
+        <rdfs:comment>中等&apos;承担&apos;或携带表达。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#believed_by">
+        <rdfs:comment>将信念与持有信念的代理人联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#believes">
+        <rdfs:comment>将代理与其持有的信念联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#declared_by">
+        <rdfs:comment>将声明的表达式与声明的态度联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#declares">
+        <rdfs:comment>将声明与声明的表达式联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#evaluatively_comparable">
+        <rdfs:comment>表示某物是否与其他事物具有可比性。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#held_by">
+        <rdfs:comment>将一种命题态度与持有态度的代理人联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#holds">
+        <rdfs:comment>将一个代理与它所持有的命题态度联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#intended_by">
+        <rdfs:comment>指定某些意图是由某个代理持有的</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#intends">
+        <rdfs:comment>指定代理持有某种意图</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#medium">
+        <rdfs:comment>将表达与其所处的介质相关联（即对于存在主义的命题）</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#observer">
+        <rdfs:comment>将一个可信的观察与观察它的代理联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#observes">
+        <rdfs:comment>将一个代理与它所观察到的事物联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#promised_by">
+        <rdfs:comment>将表达式与表达式的表达式联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#promises">
+        <rdfs:comment>将承诺与承诺的承诺联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#qualified_by">
+        <rdfs:label>由...限定</rdfs:label>
+        <rdfs:comment>将一些符合条件或资格的东西联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#qualifies">
+        <rdfs:label>限定</rdfs:label>
+        <rdfs:comment>将评估的态度或资格与被限定的命题或事物联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#states">
+        <rdfs:comment>将作者与其陈述相关联</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#towards">
+        <rdfs:comment>命题态度与命题之间的关系表达了对命题的态度。命题的资格可以是真或假，也就是说，态度是指命题是真还是假。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#utterer">
+        <rdfs:comment>将一个话语（沟通的命题态度）与它的话语联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#utters">
+        <rdfs:comment>将代理与其话语联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#applies">
+        <rdfs:comment>指定某些规则是否适用于某些原子</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#excluded">
+        <rdfs:comment>指定一个规则和一个原子之间的排他关系</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#prior">
+        <rdfs:comment>指定两个规则之间的先验关系</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#rebuts">
+        <rdfs:comment>指定某个规则是否与其他规则相邻</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#rule_predicate">
+        <rdfs:comment>在某些规则中或在某些规则下的谓词</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#component">
+        <rdfs:comment>指定某些东西是其他事物的（功能）组件</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#composed_of">
+        <rdfs:comment>指定某些东西是由（空间上的）在其他事物中组成的</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#composes">
+        <rdfs:comment>指定某些东西是由（空间上的）在其他事物中组成的</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#contained_in">
+        <rdfs:comment>指定某些东西在其他事物中被包含（空间上）</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#contains">
+        <rdfs:comment>指定某些东西在其他事物中被包含（空间上）</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#direct_part">
+        <rdfs:comment>非可递的部分关系。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#direct_part_of">
+        <rdfs:comment>关系的非传递部分</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#member">
+        <rdfs:comment>指定一个集合或组的成员</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#part">
+        <rdfs:comment>传递部分关系</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#part_of">
+        <rdfs:comment>传递关系的一部分</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#strict_part">
+        <rdfs:comment>非传递部分关系</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#strict_part_of">
+        <rdfs:comment>非递变部分</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#International_Agreement">
+        <rdfs:comment>国际法律的行动者，即国家和国际组织签订的一项协议。</rdfs:comment>
+        <rdfs:label>国际协定</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#allowed_by">
+        <rdfs:comment>将一个合格的允许与允许的规范联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#allows">
+        <rdfs:comment>将规范与其允许的事物联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#disallowed_by">
+        <rdfs:comment>将符合条件的禁令与禁止使用的规范联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#disallows">
+        <rdfs:comment>将规范与不允许的事物联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#participant">
+        <rdfs:comment>参与者是参与改变的人或事物，也就是参与到变化中</rdfs:comment>
+        <rdfs:label>参与</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#participant_in">
+        <rdfs:comment>指定某些东西参与到一个过程中</rdfs:comment>
+        <rdfs:label>的参与者</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/relative-places.owl#in">
+        <rdfs:comment>“in”属性用来表示一个地方位于另一个地方（也就是包含）。因此，它也是一种与之相关的关系。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/relative-places.owl#spatial_relation">
+        <rdfs:comment>空间关系是两个地方之间的关系</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#context">
+        <rdfs:comment>上下文属性将一个主观实体与实体持有的上下文关联起来。</rdfs:comment>
+        <rdfs:label>上下文联系</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#counts_as">
+        <rdfs:label>视为</rdfs:label>
+        <rdfs:comment>Searle（1995）的关系被用来表达观察者相对或社会事实的产生，例如角色扮演或有一个功能。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on">
+        <rdfs:label>施加于</rdfs:label>
+        <rdfs:comment>指定一些主观实体被强加于某物上</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#played_by">
+        <rdfs:comment>指定某些角色扮演了某些角色</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#plays">
+        <rdfs:comment>指定某些东西起作用</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#application">
+        <rdfs:label>施用</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#duration">
+        <rdfs:label>持续</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#efficacy">
+        <rdfs:label>效力</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#in_force">
+        <rdfs:label>生效</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_efficacy_modification">
+        <rdfs:label>产生效力修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_inforce_modification">
+        <rdfs:label>产生执行修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_textual_modification">
+        <rdfs:label>产生文本修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#after">
+        <rdfs:comment>“后”是“下一个”的传递闭包;这是在时间规则中定义的。</rdfs:comment>
+        <rdfs:comment>指定一个时间周期在另一个周期之后发生，但可能与它重叠。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#before">
+        <rdfs:comment>指定一个时间周期发生在另一个周期之前，但可能与它重叠。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#between">
+        <rdfs:comment>指定一个时间周期发生在两个其他时期之间</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#during">
+        <rdfs:comment>指定在另一个期间发生的时间周期</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#finishes">
+        <rdfs:comment>指定一个时间周期结束另一个周期，也就是说，另一个周期开始之前，但在同一时刻结束</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#immediately_after">
+        <rdfs:comment>指定一个时间周期在另一个周期之后立即发生，也就是说，它从另一个周期结束的地方开始</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#overlap">
+        <rdfs:comment>指定一个时间段与另一个时间段重叠（以任何方式）</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#preceeds">
+        <rdfs:comment>指定一个时间周期在另一个周期之前，周期不会重叠</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#starts">
+        <rdfs:comment>指定一个时间周期开始另一个周期，也就是说，另一个周期在同一时间开始，但在以后的时间结束。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#temporal_relation">
+        <rdfs:comment>两个时间段之间的关系</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

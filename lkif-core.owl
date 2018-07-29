@@ -1,43 +1,314 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns:modification="http://www.estrellaproject.org/lkif-core/time-modification.owl#"
-    xmlns:norm="http://www.estrellaproject.org/lkif-core/norm.owl#"
-    xmlns:laction="http://www.estrellaproject.org/lkif-core/legal-action.owl#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns="http://www.estrellaproject.org/lkif-core/lkif-core.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rules="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#"
-    xmlns:lrole="http://www.estrellaproject.org/lkif-core/legal-role.owl#"
-  xml:base="http://www.estrellaproject.org/lkif-core/lkif-core.owl">
-  <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/legal-role.owl"/>
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
+<rdf:RDF xmlns="http://www.estrellaproject.org/lkif-core/lkif-core.owl#"
+     xml:base="http://www.estrellaproject.org/lkif-core/lkif-core.owl"
+     xmlns:laction="http://www.estrellaproject.org/lkif-core/legal-action.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:lrole="http://www.estrellaproject.org/lkif-core/legal-role.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rules="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:modification="http://www.estrellaproject.org/lkif-core/time-modification.owl#"
+     xmlns:norm="http://www.estrellaproject.org/lkif-core/norm.owl#">
+    <owl:Ontology rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl">
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/legal-role.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
+
+The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
+
+</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This module is part of LKIF-Core, version 1.0.3, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
+</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 Partner contributions from the University of Amsterdam (UvA), the University of Bologna (UNIBO) and the Fraunhofer institute (FOKUS)
 
 Editor:       Rinke Hoekstra (UvA)
 Authors:      Rinke Hoekstra (UvA), Alexander Boer (UvA), Kasper van den Berg (UvA)
 Contributors: Joost Breuker (UvA), Thomas Gordon (FOKUS), Monica Palmirani (UNIBO), Rosella Rubino (UNIBO)
 </owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
-The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
-
-The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
-
-</owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 LKIF-Core, version 1.1, copyright (C) 2007, the ESTRELLA consortium
 </owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
-This module is part of LKIF-Core, version 1.0.3, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
-</owl:versionInfo>
-  </owl:Ontology>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Argument">
+        <rdfs:comment>论证是通过某种媒介表达的理由</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Assumption">
+        <rdfs:comment>虽然没有具体的证据证明在这种特殊情况下是正确的，但通常情况下会提出一些建议</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Belief">
+        <rdfs:comment>代理人“相信”的东西，即坚持为真</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Cause">
+        <rdfs:comment>一个原因是某种事物所发挥的认知作用，这是一个（链）过程的结果</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Communicated_Attitude">
+        <rdfs:comment>沟通的态度是一种涉及沟通行为的命题态度。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Declaration">
+        <rdfs:comment>Searle：声明的成功表现足以实现单词与世界之间的契合，使命题内容成为现实。 换句话说，如果声明与断言，信仰或观察之间存在不一致，则声明不是虚假的。 真正的定义和规范，以及立法者的其他一些表演性陈述。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Desire">
+        <rdfs:comment>一种想要的感觉</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Document">
+        <rdfs:label>文件</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Attitude">
+        <rdfs:comment>评价态度表达，例如 一个判断。 由评价态度限定的命题与其他东西相当。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Proposition">
+        <rdfs:comment>一些具有评价性的东西，即评价适用于命题，判断命题。 该命题与其他命题相当。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Evidence">
+        <rdfs:comment>观察和/或陈述，用作信仰的支持。 证据是观察的作用，它受某些信仰的限制。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Expectation">
+        <rdfs:comment>不仅不是观察本身，而且预期的事物在任何意义上都不是观察</rdfs:comment>
+        <rdfs:comment>期望是一种纯粹逻辑理由的预测信念，即不基于直接外部证据，如观察或其他代理人的陈述。 它通常也被描述为“对未来的信念”，但这并不是很有帮助，因为人们也可能对过去（未知）过去抱有期望。 例如，进化论是预测过去物种存在的沃土，因此也是未来观测的预测指标。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Expression">
+        <rdfs:comment>表达式是一种由某种媒介承载的命题，例如： 一份文件，并以一些沟通的态度表达</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Fact">
+        <rdfs:comment>一个事实是（关于某事）这个命题（通常）同意保持为真：它有一些证据支持</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Intention">
+        <rdfs:comment>意图是代理人期望他或她的行为产生某些后果并希望发生这些后果的地方。 这个概念必须以某种方式与资格和偏好相关。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Lie">
+        <rdfs:comment>一种与说话者的信念不一致的断言。 这是*故意*假。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Observation">
+        <rdfs:comment>观察是通过观察代理人而被认为是真或假的某个命题所起的作用。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Problem">
+        <rdfs:comment>问题是偏离意图的观察。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Promise">
+        <rdfs:comment>允诺是对未来的一些动作或状态的沟通态度</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Proposition">
+        <rdfs:comment>注意：在此本体的先前版本中，此类称为“合格”。 代替命题与Propositional_Attitude之间的分离，该类的预期含义已移至&apos;Evaluative_Proposition&apos;</rdfs:comment>
+        <rdfs:comment>（非逻辑）命题是由命题态度限定的命题。 注意：这里使用的命题与命题逻辑中的命题不对应。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Propositional_Attitude">
+        <rdfs:comment>命题态度将一个人（态度的持有者）与某个命题联系起来，实际上它表达了对命题的一些限定。 当必须区分与所表达的事物有关的属性和表达本身的属性时，必须区分命题和由它表达的命题内容。 对于LKIF，信念，意图，资格和观察之间的区别是相关的。 信仰/期望，意图和观察之间的区别与i.a.相关。 建立犯罪意图（犯罪心理）。 信念（表达代理人心灵的内容）和陈述（表达代理人的交流行为的内容）之间的区别是经典的。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Qualification">
+        <rdfs:comment>资格表示例如 一个判断。 通过资格认证的东西可以与其他东西相媲美。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Qualified">
+        <rdfs:label>规范</rdfs:label>
+        <rdfs:comment>某些资格认定的东西</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Reason">
+        <rdfs:comment>原因对应的原因</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Speech_Act">
+        <rdfs:comment>言语行为（或言外行为）创造了一些命题态度，这种态度限定了表达（默认情况下通过某种媒介来调节）。 言语行为的演员是情绪的说话者（NB不能用OWL DL表示）。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Statement_In_Writing">
+        <rdfs:comment>不要与实际的写作/文档本身混淆，后者是声明的媒介。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Surprise">
+        <rdfs:comment>令人意外的是一种偏离预期的观察结果。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Act_of_Law">
+        <rdfs:comment>法律：立法机构的公共行为，创造具有法律地位的表达; 法律地位取决于立法机构的管辖权。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Assignment">
+        <rdfs:comment>公共行为，将公共行为的权力归于公共机构。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Co-operative">
+        <rdfs:comment>通过共同拥有和民主控制的企业自愿联合起来以满足其共同的经济，社会和文化需求和愿望的自治协会。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Corporation">
+        <rdfs:comment>公司是一个法律实体，虽然由自然人组成，但与它们完全分开存在。 这种分离赋予了公司其他法律实体所缺乏的独特权力。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Decision">
+        <rdfs:comment>决定：公共机构使用法律赋予的公共权力进行公共行为的（书面）决定。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Delegation">
+        <rdfs:comment>代表：将任务或责任委托给其他人</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Foundation">
+        <rdfs:comment>一种（慈善）组织，由个人或机构设立为法人实体，目的是根据基金会的目标分配补助金以支持事业</rdfs:comment>
+        <rdfs:label>基金会</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legal_Speech_Act">
+        <rdfs:comment>法律言论行为为法律表达创造了一些命题态度。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body">
+        <rdfs:label>立法机关</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Mandate">
+        <rdfs:comment>授权：赋予（某人）以某种方式行事的权力</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Public_Act">
+        <rdfs:comment>公共行为是某个人或组织的行为，它创造（至少）沟通的态度（从而表达）</rdfs:comment>
+        <rdfs:label>公共行为</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Public_Body">
+        <rdfs:comment>通过法律行为为公共利益服务而创建的公共机构或机构</rdfs:comment>
+        <rdfs:label>公共机构</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Action_Power">
+        <rdfs:comment>行动权力包括通过决定行动产生法律效力的一般权力。 也称为Subjections</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed">
+        <rdfs:comment>见规范合格。 替代标签：允许，批准，允许，许可。</rdfs:comment>
+        <rdfs:label>允许</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed_And_Disallowed">
+        <rdfs:comment>通过某种规范允许和禁止的东西</rdfs:comment>
+        <rdfs:label>允许和不允许</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Belief_In_Violation">
+        <rdfs:comment>对某些违规行为的信念</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Code">
+        <rdfs:label>法规</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Code_of_Conduct">
+        <rdfs:label>行为守则</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Contract">
+        <rdfs:comment>合同带有一个或多个规范，所有规范都由一些自然人或法人说出。 它不能承受由不同类型的代理人发出的表达。</rdfs:comment>
+        <rdfs:label>合同</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Declarative_Power">
+        <rdfs:comment>我们说j具有声明能力来实现A意味着如果j声明A，那么它在法律上是有效的A.例如，如果x具有声明权力来终止y对x的义务，那么如果x声明y是 对x完成的义务，那么这项义务的完成在法律上是有效的。</rdfs:comment>
+        <rdfs:comment>声明权力涵盖了通过党的声明产生效果的情况</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Decree">
+        <rdfs:label>判决</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Definitional_Expression">
+        <rdfs:comment>法律背景中的定义（例如“x表示y”或“x表示y”）;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Directive">
+        <rdfs:label>指示</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Disallowed">
+        <rdfs:comment>见合格。 替代标签：违反，禁止，禁止</rdfs:comment>
+        <rdfs:label>不允许</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Disallowed_Intention">
+        <rdfs:comment>不允许意图的命题内容（即预期的内容）。 建立犯罪意图（有罪的头脑）的有趣概念，虽然“不允许”是一种比犯罪更弱的资格。 注意故意犯罪和故意犯罪之间的区别。 犯下的罪行不一定要与旨在建立意图的罪行相匹配！</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Enabling_Power">
+        <rdfs:comment>在法律旨在使某些代理人能够以特定方式产生效果的情况下，使用赋权。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Evaluative_Expression">
+        <rdfs:comment>一个法律评价表达断言某事物是好是坏，是要优化的价值还是要最小化的邪恶（例如“人的尊严是价值”，“参与应该被提升”）;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Exclusionary_Right">
+        <rdfs:comment>排他性权利涉及禁止进行某些推断（禁止以某种方式推理），或
+为某些目的而使用某些类型的处所，以符合特定的人的利益。 反歧视规则尤其如此。</rdfs:comment>
+        <rdfs:label>独家经营权 别除权</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Existential_Expression">
+        <rdfs:comment>建立或终止法人实体的存在（例如“公司不再存在”）;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Hohfeldian_Power">
+        <rdfs:comment>hohfeldian权力涵盖了决定法律效力的任何行动。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Immunity">
+        <rdfs:comment>也称为残疾人</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Legal_Document">
+        <rdfs:label>法律文件</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Legal_Expression">
+        <rdfs:comment>法律表达是由一些法律言论行为创造的，并通过沟通的态度来限定</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right">
+        <rdfs:comment>责任权利表达了某种行为权利，这种权利带来了履行另一种（补偿）行为的责任。 例如，如果某些k执行允许的动作A，则k必须为了j的利益执行另一个动作B.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Liberty_Right">
+        <rdfs:comment>如果为了一个人的利益，这个人被允许执行和省略一项行动 - 也就是说，当行动是兼职的时候 - 我们可以说他或她在行动方面享有自由权。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Norm">
+        <rdfs:comment>规范是一种资格。 规范性地限定某些东西（即一些规范性合格）的资格：即允许或不允许某些东西的资格。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Normatively_Qualified">
+        <rdfs:comment>某些符合规范（允许，不允许）的东西，即规范适用于该事物。 采用道义选择原则意味着规范性陈述的发言者打算影响声明的收件人做出的选择，合格的东西应该与某种替代方案相当。 请注意，Qualified不会分区为Allowed和Disallowed。 首先，一个规范可以允许事物，另一个规则可以禁止。 其次，许可所允许的事物的逻辑补充是合格的（比允许的更糟或更重），但既不允许也不允许。</rdfs:comment>
+        <rdfs:label>规范合格</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Obligation">
+        <rdfs:comment>见禁令</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right">
+        <rdfs:label>义务权利</rdfs:label>
+        <rdfs:comment>有针对性的义务应该也被称为义务性权利。 k具有j做A的义务权利，如果它是强制性的，对k来说，j做A.答：对于玛丽来说，汤姆向约翰支付1000欧元是强制性的“</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged">
+        <rdfs:comment>是义务允许的，即根据义务，替代是严格的。 替代标签：指挥，指挥。</rdfs:comment>
+        <rdfs:label>义务</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation">
+        <rdfs:comment>观察违规行为，即不允许的行为。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Permission">
+        <rdfs:comment>许可允许命题，因此允许的预测适用。 允许的东西是/是由许可限定的东西的子集。 如果S则P（A）表示S是合格的并且允许S和A.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Permissive_Right">
+        <rdfs:comment>对指示性义务的否定是指导性许可。 然而，只有当这种否定旨在使获准行动的作者受益时，才算作权利，即宽容权利。</rdfs:comment>
+        <rdfs:label>许可性权利</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Potestative_Expression">
+        <rdfs:comment>赋予某个代理人权力（例如“工人有权终止其工作合同”）;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Potestative_Right">
+        <rdfs:comment>一种强制性的权利是一种赋予权力的手段，这意味着权力的拥有者。 例如，如果某些动物没有
+属于任何人，然后x具有通过捕获y来启动x对动物的所有权的权利 - 权利。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Prohibition">
+        <rdfs:comment>禁止强制/允许物品，因此预测的Obliged适用，并禁止因此禁止预测适用的物品。 允许的物品和不允许的物品的结合由禁令限定。 禁令允许和禁止的东西是不相交的（并且完全划分了合格的东西）。 如果S则O（A）表示S合格，则S和A被强制/允许，并且不允许S而不是A. 如果S则F（A）表示S合格，则不允许S和A，并且S和A不是强制/允许的。 义务与禁止之间的区别在于，合格空间的分区部分由规范性声明明确描述。 替代标签：指令</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Qualificatory_Expression">
+        <rdfs:comment>归咎于个人或客体的法律角色（例如，“x是公民”，“x是知识分子的工作”，“x是技术发明”）;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Regulation">
+        <rdfs:comment>一项法规有一个或多个规范，所有这些都是由一些立法机构发出的。 它不能承受立法机构没有说出的表达。</rdfs:comment>
+        <rdfs:label>条例</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Right">
+        <rdfs:comment>权利是在民间社会中做或不做某事或获得或不获取行动，事物或认罪的法律或道德权利。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Statute">
+        <rdfs:label>法规</rdfs:label>
+        <rdfs:comment>法规有一个或多个规范，所有这些规范都由一些法人说出。 它不能承受由不同类型的代理人发出的表达。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Strictly_Allowed">
+        <rdfs:label>严格允许</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Strictly_Disallowed">
+        <rdfs:label>严格禁止</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Treaty">
+        <rdfs:comment>条约是国际法中的行为者即国家和国际组织根据国际法订立的具有约束力的协定。 条约有几个名称：条约，国际协议，协议，契约，公约，信件交换，票据交换等。</rdfs:comment>
+        <rdfs:label>条约</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
-<!-- Created with TopBraid Composer -->
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

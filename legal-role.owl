@@ -1,80 +1,259 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:role="http://www.estrellaproject.org/lkif-core/role.owl#"
-    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-    xmlns="http://www.estrellaproject.org/lkif-core/legal-role.owl#"
-  xml:base="http://www.estrellaproject.org/lkif-core/legal-role.owl">
-  <owl:Ontology rdf:about="">
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
+<rdf:RDF xmlns="http://www.estrellaproject.org/lkif-core/legal-role.owl#"
+     xml:base="http://www.estrellaproject.org/lkif-core/legal-role.owl"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:role="http://www.estrellaproject.org/lkif-core/role.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.estrellaproject.org/lkif-core/legal-role.owl">
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
+
+The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
+
+</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+LKIF Core, version 1.1, copyright (C) 2008, the ESTRELLA consortium
+</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
+</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 Partner contributions from the University of Amsterdam (UvA).
 
 Editor:       Rinke Hoekstra (UvA)
 Authors:      Rinke Hoekstra (UvA)
 Contributors: Joost Breuker (UvA)
 </owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
-The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
+    </owl:Ontology>
+    
 
-The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
 
-</owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
-LKIF Core, version 1.1, copyright (C) 2008, the ESTRELLA consortium
-</owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
-This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
-</owl:versionInfo>
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl"/>
-  </owl:Ontology>
-  <owl:Class rdf:ID="Social_Legal_Role">
-    <rdfs:subClassOf>
-      <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Social_Role">
-        <owl:disjointWith rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Function"/>
-      </rdf:Description>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="Legal_Role"/>
-    </rdfs:subClassOf>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A social legal role is played by some agent in the context of legal activities.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="#Legal_Role">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl#Agent"/>
-        <owl:onProperty rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl#Agent"/>
-        <owl:onProperty rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Role"/>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A legal role is a role played in a legal context. Legal role players can be both Agents and other 'things'</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:ID="Professional_Legal_Role">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl#Person"/>
-        <owl:onProperty rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A professional legal role is a legal profession of some person, examples: lawyer, judge etc.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="#Social_Legal_Role"/>
-    <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Organisation_Role"/>
-  </owl:Class>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Agent -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Agent">
+        <rdfs:comment xml:lang="zh-cn">代理人是任何可以行动的 owl:Thing，即扮演&apos;演员&apos;角色。 一种行为</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">它是命题态度的持有者</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">代理人</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Person -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Person">
+        <rdfs:comment>一个人是个人代理人。 通常与“人类”有关。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">人类</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/legal-role.owl#Legal_Role -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/legal-role.owl#Legal_Role">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
+                <owl:allValuesFrom rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A legal role is a role played in a legal context. Legal role players can be both Agents and other &apos;things&apos;</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">法律角色是在法律背景下发挥的作用。 法律角色扮演者可以是代理人和其他“事物”</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">法律角色</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/legal-role.owl#Professional_Legal_Role -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/legal-role.owl#Professional_Legal_Role">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/legal-role.owl#Social_Legal_Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Organisation_Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
+                <owl:allValuesFrom rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A professional legal role is a legal profession of some person, examples: lawyer, judge etc.</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">专业法律角色是某人的法律职业，例如：律师，法官等。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">专业法律角色</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/legal-role.owl#Social_Legal_Role -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/legal-role.owl#Social_Legal_Role">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/legal-role.owl#Legal_Role"/>
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Social_Role"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social legal role is played by some agent in the context of legal activities.</rdfs:comment>
+        <rdfs:comment xml:lang="zh-cn">在法律活动的背景下，某些代理人扮演着社会法律角色。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">社会法律角色</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/role.owl#Function -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Function">
+        <owl:disjointWith rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Social_Role"/>
+        <rdfs:comment xml:lang="zh-cn">在某些上下文中使用的某些对象的用途或目的。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">功能</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/role.owl#Organisation_Role -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Organisation_Role">
+        <rdfs:comment xml:lang="zh-cn">在组织的上下文中具有意义的角色：即角色定义组织内角色结构中的“位置”</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">组织角色</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/role.owl#Role -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Role">
+        <rdfs:comment xml:lang="zh-cn">角色是默认行为的规范，并伴随着“扮演”角色的期望。 与扮演角色但不是角色的剧院演员类似。 示例：学生。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">角色</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/role.owl#Social_Role -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Social_Role">
+        <rdfs:comment xml:lang="zh-cn">在社交活动的背景下，某些代理人扮演社会角色。 社会角色带来了对角色填充者的“默认”行为的一些期望。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">社会角色</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Action">
+        <rdfs:label xml:lang="zh-cn">动作</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">行动是由单个代理人发挥作用的变化。 代理人是行动的某些行为结果的持有者：行动总是有意的。 代理人的意图通常对应于预期结果的预期：代理人相信某些期望。 请注意，意图可能与行动的*实际*结果不一致。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Artifact">
+        <rdfs:label xml:lang="zh-cn">人工制品</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">由某人创建以实现特定目的的物理对象</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Collaborative_Plan">
+        <rdfs:comment xml:lang="zh-cn">协作计划是在至少两个代理a和b之间共享（和执行）的计划。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">协作计划</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Creation">
+        <rdfs:comment xml:lang="zh-cn">导致某个实体/个人创造的行为</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">产物</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Natural_Object">
+        <rdfs:comment xml:lang="zh-cn">自然物体是不是由人创造的物体。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">自然物体</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Organisation">
+        <rdfs:label xml:lang="zh-cn">组织</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">组织是一组“一体行动”的其他组织或个人。 组织既可以是正式的（即通过法律或法令创建），也可以是非正式的。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Personal_Plan">
+        <rdfs:comment xml:lang="zh-cn">个人计划是由最多一个代理人持有（并且可以执行）的计划。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">个人计划</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Plan">
+        <rdfs:label xml:lang="zh-cn">计划</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Reaction">
+        <rdfs:comment xml:lang="zh-cn">反应是（至少）由观察到其他行动的代理人执行的行动（这是一个内涵视图）：行动&lt; - &gt;反应</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">反应</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Trade">
+        <rdfs:comment xml:lang="zh-cn">交易是两个代理a和b之间的一些交换。 由两个动作A和B组成，其中a是动作A的动作者和动作B的接收者，反之亦然。 通常这些动作是同时执行的，但也可以这样做。 交易事物的所有权是每个行动的要求/结果对。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">交易</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Transaction">
+        <rdfs:label xml:lang="zh-cn">交易</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">交易是至少两个代理a和b之间的交换或交互。 由两个动作A和B组成，其中a是动作A的动作者和动作B的接收者，反之亦然。 通常这些动作是同时执行的，但也可以这样做。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Continuation">
+        <rdfs:label xml:lang="zh-cn">延续</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">一旦开始实施，就会继续进行变化</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Initiation">
+        <rdfs:comment xml:lang="zh-cn">变化的开始</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">开始实施</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Mental_Process">
+        <rdfs:comment xml:lang="zh-cn">一种没有物理影响的心理过程，即非物理过程。 例子是（人类）思想和推理。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">心理过程</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Physical_Object">
+        <rdfs:comment xml:lang="zh-cn">物理对象是由物质组成的物理实体，它具有时空延伸。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">物理对象</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Physical_Process">
+        <rdfs:label xml:lang="zh-cn">物理过程</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Process">
+        <rdfs:label xml:lang="zh-cn">过程</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">过程是一种“因果”变化：任何可以通过某种已知或理解的因果结构来解释的变化。 每个进程都有一些Time_Period作为持续时间。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Termination">
+        <rdfs:label xml:lang="zh-cn">终止</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">终止变更。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Epistemic_Role">
+        <rdfs:comment xml:lang="zh-cn">在（心理）推理/推理过程中使用的某些东西的作用</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">认知角色</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Person_Role">
+        <rdfs:comment xml:lang="zh-cn">某人（即非组织）所扮演的角色</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">人类角色</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#Subjective_Entity">
+        <rdfs:label xml:lang="zh-cn">主观实体</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">主观实体在本体论上是主观的，即它的存在是相对于观察者的，在给定上下文的情况下，它将其属性归因于某个其他实体。</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#Interval">
+        <rdfs:comment xml:lang="zh-cn">间隔是多个时间段的组合。</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">间隔</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#Moment">
+        <rdfs:label xml:lang="zh-cn">时刻</rdfs:label>
+        <rdfs:comment xml:lang="zh-cn">片刻是原子时间段，即它不能分成其他部分</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
-<!-- Created with TopBraid Composer -->
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

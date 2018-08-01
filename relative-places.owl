@@ -262,7 +262,7 @@ Contributors: Joost Breuker (UvA)</owl:versionInfo>
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Spatio_Temporal_Occurrence -->
 
     <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Spatio_Temporal_Occurrence">
-        <rdfs:label xml:lang="zh-cn">时空发生</rdfs:label>
+        <rdfs:label xml:lang="zh-cn">时间地点</rdfs:label>
     </owl:Class>
     
 
@@ -417,7 +417,7 @@ Contributors: Joost Breuker (UvA)</owl:versionInfo>
      -->
 
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Occurrence">
-        <rdfs:label xml:lang="zh-cn">发生</rdfs:label>
+        <rdfs:label xml:lang="zh-cn">事件</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#Pair">
         <rdfs:comment xml:lang="zh-cn">正好由两部分组成</rdfs:comment>

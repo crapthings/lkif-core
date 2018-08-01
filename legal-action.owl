@@ -58,7 +58,15 @@ LKIF Core, version 1.1, copyright (C) 2008, the ESTRELLA consortium
 
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Person">
         <owl:equivalentClass rdf:resource="http://www.estrellaproject.org/lkif-core/legal-action.owl#Natural_Person"/>
-        <rdfs:label>人类</rdfs:label>
+        <rdfs:label>人</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Transaction -->
+
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Transaction">
+        <rdfs:label>事务</rdfs:label>
     </rdf:Description>
     
 
@@ -386,6 +394,30 @@ A legal entity is not necessarily distinct from the natural persons of which it 
 
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Agent">
         <rdfs:label>代理人</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Collaborative_Plan">
+        <rdfs:label>合作计划</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Personal_Plan">
+        <rdfs:label>个人计划</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Plan">
+        <rdfs:label>计划</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Trade">
+        <rdfs:label>交易</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Proposition">
+        <rdfs:label>评价主张</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Expression">
+        <rdfs:label>表述</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Proposition">
+        <rdfs:label>主张</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Propositional_Attitude">
+        <rdfs:label>主张态度</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 

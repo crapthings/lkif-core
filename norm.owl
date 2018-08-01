@@ -206,7 +206,7 @@
 
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Medium">
         <rdfs:comment>媒介是表达的承载者，即外化命题。 命题一旦通过某种媒介外化，就会成为表达。</rdfs:comment>
-        <rdfs:label xml:lang="zh-cn">媒介</rdfs:label>
+        <rdfs:label xml:lang="zh-cn">2法律渊源</rdfs:label>
     </rdf:Description>
     
 

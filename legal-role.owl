@@ -49,7 +49,7 @@ Contributors: Joost Breuker (UvA)
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Agent">
         <rdfs:comment xml:lang="zh-cn">代理人是任何可以行动的 owl:Thing，即扮演&apos;演员&apos;角色。 一种行为</rdfs:comment>
         <rdfs:comment xml:lang="zh-cn">它是命题态度的持有者</rdfs:comment>
-        <rdfs:label xml:lang="zh-cn">代理人</rdfs:label>
+        <rdfs:label xml:lang="zh-cn">1主体</rdfs:label>
     </rdf:Description>
     
 
@@ -58,7 +58,7 @@ Contributors: Joost Breuker (UvA)
 
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/action.owl#Person">
         <rdfs:comment>一个人是个人代理人。 通常与“人类”有关。</rdfs:comment>
-        <rdfs:label xml:lang="zh-cn">人类</rdfs:label>
+        <rdfs:label xml:lang="zh-cn">人</rdfs:label>
     </rdf:Description>
     
 
@@ -205,8 +205,8 @@ Contributors: Joost Breuker (UvA)
         <rdfs:comment xml:lang="zh-cn">交易是至少两个代理a和b之间的交换或交互。 由两个动作A和B组成，其中a是动作A的动作者和动作B的接收者，反之亦然。 通常这些动作是同时执行的，但也可以这样做。</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Continuation">
-        <rdfs:label xml:lang="zh-cn">延续</rdfs:label>
         <rdfs:comment xml:lang="zh-cn">一旦开始实施，就会继续进行变化</rdfs:comment>
+        <rdfs:label xml:lang="zh-cn">持续</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Initiation">
         <rdfs:comment xml:lang="zh-cn">变化的开始</rdfs:comment>

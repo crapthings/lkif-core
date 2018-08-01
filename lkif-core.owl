@@ -114,8 +114,8 @@ LKIF-Core, version 1.1, copyright (C) 2007, the ESTRELLA consortium
         <rdfs:comment>资格表示例如 一个判断。 通过资格认证的东西可以与其他东西相媲美。</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Qualified">
-        <rdfs:label>规范</rdfs:label>
         <rdfs:comment>某些资格认定的东西</rdfs:comment>
+        <rdfs:label>3规则</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Reason">
         <rdfs:comment>原因对应的原因</rdfs:comment>
@@ -161,8 +161,8 @@ LKIF-Core, version 1.1, copyright (C) 2007, the ESTRELLA consortium
         <rdfs:comment>授权：赋予（某人）以某种方式行事的权力</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Public_Act">
+        <rdfs:label>政府行为</rdfs:label>
         <rdfs:comment>公共行为是某个人或组织的行为，它创造（至少）沟通的态度（从而表达）</rdfs:comment>
-        <rdfs:label>公共行为</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Public_Body">
         <rdfs:comment>通过法律行为为公共利益服务而创建的公共机构或机构</rdfs:comment>

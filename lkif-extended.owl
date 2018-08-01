@@ -41,6 +41,42 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Assumption">
+        <rdfs:label>假定</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Cause">
+        <rdfs:label>导致</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Desire">
+        <rdfs:label>诉求</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Attitude">
+        <rdfs:label>评价态度</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Evidence">
+        <rdfs:label>证明</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Exception">
+        <rdfs:label>例外</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Expectation">
+        <rdfs:label>预期</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Fact">
+        <rdfs:label>事实</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Intention">
+        <rdfs:label>意图</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Qualification">
+        <rdfs:label>限定性条件</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Speech_Act">
+        <rdfs:label>言语行为</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#Statement_In_Writing">
+        <rdfs:label>陈述书</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#addressee">
         <rdfs:label>受信人</rdfs:label>
         <rdfs:comment>允许表达交流态度与沟通行为被处理的代理之间的关系</rdfs:comment>
@@ -107,6 +143,9 @@
         <rdfs:label>限定</rdfs:label>
         <rdfs:comment>将评估的态度或资格与被限定的命题或事物联系起来</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#qualitatively_comparable">
+        <rdfs:label>定性比较</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#states">
         <rdfs:comment>将作者与其陈述相关联</rdfs:comment>
     </rdf:Description>
@@ -118,6 +157,39 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/expression.owl#utters">
         <rdfs:comment>将代理与其话语联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Act_of_Law">
+        <rdfs:label>法律规则</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Assignment">
+        <rdfs:label>指派</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Co-operative">
+        <rdfs:label>合作企业</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Decision">
+        <rdfs:label>决定</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Delegation">
+        <rdfs:label>委托</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legal_Person">
+        <rdfs:label>法人</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legal_Speech_Act">
+        <rdfs:label>法律言语行为</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/legal-action.owl#Mandate">
+        <rdfs:label>授权</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#Assumption">
+        <rdfs:label>假定</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#Exception">
+        <rdfs:label>例外</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#Negated_Atom">
+        <rdfs:label>否定原子</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#applies">
         <rdfs:comment>指定某些规则是否适用于某些原子</rdfs:comment>
@@ -170,9 +242,49 @@
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/mereology.owl#strict_part_of">
         <rdfs:comment>非递变部分</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Custom">
+        <rdfs:label>习惯</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Customary_Law">
+        <rdfs:comment>在法律上，习惯法或习惯法由既定的行为模式组成，这些行为模式可以在特定的社会环境中得到客观的验证。</rdfs:comment>
+        <rdfs:label>习惯法</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Disallowed_Intention">
+        <rdfs:label>不允许的意图</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#International_Agreement">
         <rdfs:comment>国际法律的行动者，即国家和国际组织签订的一项协议。</rdfs:comment>
         <rdfs:label>国际协定</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#International_Arbitration">
+        <rdfs:label>国际仲裁</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Legal_Doctrine">
+        <rdfs:label>法律原则</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Legal_Source">
+        <rdfs:label>法律来源</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Mandatory_Precedent">
+        <rdfs:label>强制性判决先例</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Non-binding_International_Agreement">
+        <rdfs:label>不具约束力的国际协议</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Persuasive_Precedent">
+        <rdfs:label>说服性判决先例</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Precedent">
+        <rdfs:label>判决先例</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Proclamation">
+        <rdfs:label>宣布</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Resolution">
+        <rdfs:label>决议</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Soft_Law">
+        <rdfs:label>软性法律</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#allowed_by">
         <rdfs:comment>将一个合格的允许与允许的规范联系起来</rdfs:comment>
@@ -185,6 +297,9 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#disallows">
         <rdfs:comment>将规范与不允许的事物联系起来</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#Change">
+        <rdfs:label>变化</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#participant">
         <rdfs:comment>参与者是参与改变的人或事物，也就是参与到变化中</rdfs:comment>
@@ -218,6 +333,81 @@
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/role.owl#plays">
         <rdfs:comment>指定某些东西起作用</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Annulment">
+        <rdfs:label>废除</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Efficacy_Modification">
+        <rdfs:label>效力修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#End_efficacy">
+        <rdfs:label>失效</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#End_in_Force">
+        <rdfs:label>效力终止</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Integration">
+        <rdfs:label>合并</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Interpretation">
+        <rdfs:label>修改解释</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Modification">
+        <rdfs:label>修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Modification_of_Meaning">
+        <rdfs:label>修改定义</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Modification_of_Scope">
+        <rdfs:label>修改范围</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Modification_of_System">
+        <rdfs:label>修改结构</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Modification_of_Term">
+        <rdfs:label>术语修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Prorogation_Efficacy">
+        <rdfs:label>延期效力</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Prorogation_in_Force">
+        <rdfs:label>效力延期</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Relocation">
+        <rdfs:label>移动</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Renewal">
+        <rdfs:label>更新</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Repeal">
+        <rdfs:label>废止</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Retroactivity">
+        <rdfs:label>溯及力</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Semantic_Annotation">
+        <rdfs:label>语意标注</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Start_Efficacy">
+        <rdfs:label>生效</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Start_in_Force">
+        <rdfs:label>开始生效</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Substitution">
+        <rdfs:label>替换</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Suspension">
+        <rdfs:label>暂缓</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Temporal_Modification">
+        <rdfs:label>临时修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Textual_Modification">
+        <rdfs:label>文本修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#Variation">
+        <rdfs:label>变种</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#application">
         <rdfs:label>施用</rdfs:label>
     </rdf:Description>
@@ -238,6 +428,9 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_textual_modification">
         <rdfs:label>产生文本修改</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#Temporal_Occurrence">
+        <rdfs:label>时间</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/time.owl#after">
         <rdfs:comment>“后”是“下一个”的传递闭包;这是在时间规则中定义的。</rdfs:comment>
